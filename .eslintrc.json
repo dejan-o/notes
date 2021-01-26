@@ -1,0 +1,12 @@
+{
+"parser": "babel-eslint",
+"rules": {
+    "quotes": ["error","single"],
+    "semi" : ["error","always"],
+    "indent": ["error","tab"],
+    "key-spacing": ["error", { "afterColon": true }],
+    "comma-spacing": ["error", { "before": false, "after": true }],
+    "object-curly-spacing": ["error", "always"],
+    "no-mixed-spaces-and-tabs": 0// disable rule 
+    }
+}

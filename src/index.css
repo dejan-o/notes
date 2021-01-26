@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size:62.5%;
+}
+
+.app{
+    min-height: 100vh;
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #eee;
+
+   
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    font-size: 3rem;
+    padding: 20px;
+    background-color: lightskyblue;
+}
+
+h2 {
+    color: #fff;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 300px;   
+    font-size: 2rem;
+}
+
+button {
+    padding: 10px;
+    font-size: 2rem;
+    color: blue;
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+.list {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.listItem, input, select {
+    border-radius: 5px;
+}
+
+button:disabled {
+    background:#eee;
+}
+
+.rmButton {
+    cursor: pointer;
+    color: #800;
+    width: 10%;
+    margin-left: auto;
+}
+
+.rmButton:hover {
+    color: red;
+}
+
+ul div, ul li {
+    margin: 20px 0;
+}
+
+.listItem{
+  min-width: 50%;
+  width: fit-content;
+  padding: 3px 20px;
+  background-color: #fff;
+  margin: 10px auto;
+  display: flex;
+
+}
+
+.green {
+    color: green;
+}
+.item {
+    width: 90%;
+}
+
+.toDoItem {
+    cursor: pointer;
+}
