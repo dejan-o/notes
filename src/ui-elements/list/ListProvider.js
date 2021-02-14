@@ -20,7 +20,7 @@ const ListProvider = ({ children }) => {
 		textNote: [],    
 	});
 	const { itemsType } = useContext(SelectContext);
-	const addListItem = item => setList({ ...list, [itemsType]: [...list[itemsType], { id: list[itemsType].length, value: item }] });
+	const addListItem = item => setList({ ...list, [itemsType]: [...list[itemsType], { id: list[itemsType].length ? list[itemsType][list[itemsType].length - 1].id + 1 : 0, value: item }] });
 	const removeListItem = id => setList({ ...list, [itemsType]: list[itemsType].filter( element => element.id !== id) });
 	const toggleIsDone = id => setList({ ...list, [itemsType]: list[itemsType].map( element => {
 		if(element.id === id)
